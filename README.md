@@ -1,59 +1,39 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# LaraMarket API
+**Developer:** Ahmed Alsaytari  
+**Project Status:** 🏗️ Phase 2: Database & Schema (Working on `develop`)
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A professional Marketplace REST API designed to demonstrate modern backend engineering practices. This project follows a deliberate evolution from manual logic to official Laravel ecosystem standards using a **GitFlow** branching strategy.
 
-## About Laravel
+## 🎯 Project Goal
+To build a high-performance "Micro-Market" backend where users can safely list, browse, and manage products with real-world security, strict validation, and optimized data structures.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 🚀 Key Laravel Skills Demonstrated
+| Category | Skills & Technologies |
+| :--- | :--- |
+| **Core Framework** | Laravel 12, PHP 8.4, Service Container, Dependency Injection |
+| **API Architecture** | RESTful Design, API Resources (Data Transformation) |
+| **Security** | Manual Sanctum Implementation, Laravel Breeze, Policies, Form Requests |
+| **Database** | Eloquent ORM, Advanced Relationships, Factories & Seeders |
+| **Testing & Docs** | Pest PHP (Feature Testing), Scribe (Auto-Documentation) |
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🏗 Professional Roadmap (GitFlow Strategy)
 
-## Learning Laravel
+This project utilizes a `main` branch for stable milestones, a `develop` branch for integration, and `feat/` branches for individual tasks.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+| # | Status | Branch | Type | Commit Message | Key Deliverable | Merge Target |
+| :--- | :---: | :--- | :--- | :--- | :--- | :--- |
+| 1 | ✅ | `main` | `feat` | `initial laravel installation` | Env and Sanctum setup. | -- |
+| 2 | ✅ | `main` | `docs` | `setup roadmap and readme` | Project vision & Git plan. | -- |
+| 3 | ⏳ | `feat/migrations` | `feat` | `migrations for categories/products` | Table structures & FKs. | `develop` |
+| 4 | ⏳ | `feat/models` | `feat` | `models relationships & factories` | Linking tables & fake data. | **`main`** |
+| 5 | ⏳ | `feat/auth-manual` | `feat` | `manual sanctum register/login` | Custom Auth logic. | `develop` |
+| 6 | ⏳ | `feat/validation` | `feat` | `StoreProductRequest validation` | Server-side validation. | `develop` |
+| 7 | ⏳ | `feat/policies` | `feat` | `ProductPolicy ownership logic` | Authorization layer. | `develop` |
+| 8 | ⏳ | `feat/crud` | `feat` | `ProductController CRUD` | Core Marketplace logic. | **`main`** |
+| 9 | ⏳ | `feat/resources` | `feat` | `ProductResource transformation` | Clean JSON formatting. | `develop` |
+| 10| ⏳ | `feat/testing` | `test` | `feature tests for auth & crud` | Quality assurance (Pest). | `develop` |
+| 11| ⏳ | `refactor/breeze`| `refactor`| `replace manual auth with breeze` | Modernization. | `develop` |
+| 12| ⏳ | `docs/scribe` | `docs` | `generate api docs with scribe` | Final Documentation. | **`main`** |
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
